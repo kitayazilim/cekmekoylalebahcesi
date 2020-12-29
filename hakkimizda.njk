@@ -8,7 +8,7 @@ eleventyNavigation:
 baslik: Hakkımızda
 icerikbaslik: Gözalıcı Eğitim Ortamı
 icerikaltbaslik: Çocuğunuz için sağlanabilecek en optimize ortam
-hakkimizdayazi: Hakkımızda yazısı detaylı şekilde burada görüntülenecektir. mümkün olduğunca izah edici bilgilendirici ve aydınlatıcı olmalı
+hakkimizdayazi: Çekmeköy Lalebahçesi Çocuk Akademisi, çocuklarınıza her yönden en iyi gelişen olanağı sunmak ve bilimin yanında ahlaki değerleri de öretmek için kurulmuştur. <br><br> Uzman kadromuz ile, güncel, etkili bilimsel eğitim öğretim methodlarını uygularken, çocuklarımızı ahlaki, duygusal ve sosyal girişimini de destekleyerek bilinçli toplum bireyleri yetiştirmeyi hedefliyoruz
 hakkimizdabilgiler:
     -
         Bilgilendirme 1
@@ -21,8 +21,7 @@ hakkimizdabilgiler:
     -
         Bilgilendirme 5
 
-alticerikbaslik: Eğitim Planlamamız
-alticerikyazi: Eğitim planı ya da detayları hakkında kısa ve öz <br> bilgilendirme yapılabilecek alandır.
+alticerikyazi: <h4 class="mt-3">Okul öncesi eğitim ile</h4>Okul öncesi dönemde problem çözme, güçlü ileişim becerileri, analitik düşünme, araştırmacı ve takım çalışması becerilerini geliştirerek ilkokula hazırlıklarını tamamlıyoruz. <br><h4 class="mt-3">Değerler Eğitimi ile</h4> Çocuklarımıza mukaddesata hürmet, anne-babaya hürmet, doğruluk, dürüstlük, helal gıda hassasiyeti, yardımlaşma ve temel dini bilgilerimizi öğretiyoruz.
 alticerikbuton: Bize Yazın
 butonurl: /iletisim
 
@@ -61,8 +60,6 @@ detaylaryanbaslik: Nitelikli Personel
 detaylaryanaltbaslik: Konuyla ilgili alt başlık
 detaylaryanyazi2: Konu hakkında detaylı yazı alanı
 detaylaryanbuton: İletişim
-detaylaryanbuton2: Ekibimiz 
-butonekip: link gelecek
 
 ---
 
@@ -101,7 +98,7 @@ butonekip: link gelecek
                         {{icerikaltbaslik}}
                     </p>
                     <p>
-                        {{hakkimizdayazi}}
+                        {{hakkimizdayazi | safe}}
                     </p>
                     <ul class="custom pl-0">
                         {%- for bilgi in hakkimizdabilgiler-%}
@@ -112,7 +109,7 @@ butonekip: link gelecek
                     </div>
                     <!-- /col-lg-->
                     <div class="col-lg-4">
-                        <img src="img/about/about1.jpg" class="img-fluid blob" alt="">
+                        <img src="{{'/img/about/about1.jpg' | url}}" class="img-fluid blob" alt="">
                         <!-- ornament starts-->
                         <div class="ornament-bubbles" data-aos="fade-right"></div>
                     </div>
@@ -122,13 +119,12 @@ butonekip: link gelecek
                         <div class="notepad mt-5" data-aos="zoom-out">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <img src="img/about/about3.jpg" class="img-fluid rounded rotate1" alt="">
+                                    <img src="{{'/img/about/about3.jpg' | url}}" class="img-fluid rounded rotate1" alt="">
                                     <!-- ornament starts-->
                                     <div class="ornament-rainbow" data-aos="zoom-out"></div>
                                 </div>
                                 <!-- /col-lg-->
                                 <div class="col-lg-8">
-                                    <h4 class="mt-3">{{alticerikbaslik}}</h4>
                                     <p class="res-margin">
                                         {{alticerikyazi | safe}}
                                     </p>
@@ -201,7 +197,6 @@ butonekip: link gelecek
                         </p>
                         <!-- buttons -->
                         <a href="{{butonurl}}" class="btn btn-tertiary">{{detaylaryanbuton}}</a>
-                        <a href="{{butonekip}}" class="btn-margin btn btn-quaternary ml-1">{{detaylaryanbuton2}}</a>
                     </div>
                     <!-- /col-lg-->
                 </div>

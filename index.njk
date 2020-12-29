@@ -77,12 +77,12 @@ hakkimizda:
   baslik: Hakkımızda
   altbaslik: Bizi Tanıyın
   misyon: Misyonumuz
-  misyontext: misyonumuza dair yazı buraya gelecek detaylı yazı iyi olur.
+  misyontext: Uzman kadromuz ile, güncel, etkili bilimsel eğitim öğretim methodlarını uygularken, çocuklarımızı ahlaki, duygusal ve sosyal girişimini de destekleyerek bilinçli toplum bireyleri yetiştirmeyi hedefliyoruz. <br><h4 style="color:#151515">Okul öncesi eğitim ile</h4>Okul öncesi dönemde problem çözme, güçlü ileişim becerileri, analitik düşünme, araştırmacı ve takım çalışması becerilerini geliştirerek ilkokula hazırlıklarını tamamlıyoruz. <br><h4 style="color:#151515">Değerler Eğitimi ile</h4> Çocuklarımıza mukaddesata hürmet, anne-babaya hürmet, doğruluk, dürüstlük, helal gıda hassasiyeti, yardımlaşma ve temel dini bilgilerimizi öğretiyoruz.
   linktext: Bize Ulaşın
   url: link gelecek
   bgimage: /img/about2.jpg
 
-testimonal: Ne söylediler
+testimonal: Aileler Ne Diyor
 testimonals:
   -
     soyleyen: Söyleyen Kişi
@@ -105,7 +105,7 @@ testimonals:
     soylenen: Kişinin söylediği yazı buraya yazılacak. 
     resim: img/team/team1.jpg
 
-saglananlarbaslik: Neler Sağlıyoruz
+saglananlarbaslik: Neden Lalebahçesi
 saglananlaralt : Çocuğunuz için en iyisi
 saglananlarimage: img/imkanlar.jpg
 saglananlar:
@@ -125,6 +125,40 @@ saglananlar:
     baslik: imkan 1
     detay: imkan ile ilgili detaylı bilgi
     icon: flaticon-baby-boy
+
+tedarikcilerimiz: Tedarikçiler
+tedarikciler:
+  -
+    ad: Çamlıkca Çocuk
+    image: /img/tedarikciler/camlicacocuk.png
+    url: https://camlicacocuk.com/
+  -
+    ad: Fazilet Çocuk
+    image: /img/tedarikciler/faziletcocuk.png
+    url: http://www.faziletcocuk.com/
+  -
+    ad: İnsan ve Hayat
+    image: /img/tedarikciler/insanvehayat.png
+    url: https://insanvehayat.com/
+  -
+    ad: İsabet Okulları
+    image: /img/tedarikciler/isabetokullari.png
+    url: https://www.isabetokullari.com.tr/
+  -
+    ad: Çamlıca Kitap
+    image: /img/tedarikciler/camlicakitap.png
+    url: https://www.camlicakitap.com/
+  -
+    ad: Yedi Kıta
+    image: /img/tedarikciler/yedikita.png
+    url: https://yedikita.com.tr/
+  -
+    ad: Tüzder Üstün Zekalılar Derneği
+    image: /img/tedarikciler/tuzder.png
+    url: https://tuzder.org/
+
+okulmevde: Okulum Evde
+okulevdeyazi: 
 ---
 
 {# {% set maxPosts = collections.posts.length | min(3) %}
@@ -230,9 +264,10 @@ saglananlar:
       <!-- /section-heading -->
       <div class="row">
         <div class="col-lg-7 ">
-          <h3>{{hakkimizda.misyon}}</h3>
-          <p class="mt-4 res-margin">Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecena Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-          <p>Nec elementum ipsum convall. Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecen Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall Maecenas at arcu risus scelerisque laoree.</p>
+          <h4 style="color:#151515">{{hakkimizda.misyon}}</h4>
+          <p class="mt-4 res-margin">
+            {{hakkimizda.misyontext | safe}}
+          </p>
           <a href="{{hakkimizda.url}}" class="btn btn-secondary ">{{hakkimizda.linktext}}</a>
         </div>
         <!-- /col-lg -->
@@ -518,418 +553,15 @@ saglananlar:
       <!-- /container -->
     </section>
     <!-- /section ends-->
-    <!-- section-->
-    <section id="team-home" class="container">
-      <!-- section heading -->
-      <div class="section-heading text-center">
-        <h2>Our Team</h2>
-        <p class="subtitle">Qualified Professionals</p>
-      </div>
-      <!-- /section-heading -->
-      <div class="row">
-        <div class="col-lg-7">
-          <h3>Meet our Talented Team</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <ul class="checkmark pl-0 font-weight-bold">
-            <li>Over 30 Qualified professionals</li>
-            <li>We offer you our quality services since 2002</li>
-            <li>Fun and educational activities in our daily plan</li>
-          </ul>
-          <!-- /ul-->
-        </div>
-        <!-- /col-lg-->
-        <div class="col-lg-5 res-margin">
-          <img src="img/team/team-home.jpg" alt="" class="img-fluid blob2">
-          <!-- ornament starts-->
-          <div class="ornament-stars" data-aos="fade-down"></div>
-        </div>
-        <!-- /col-lg-->
-        <div class="col-lg-12">
-          <!-- team carousel -->
-          <div class="carousel-4items owl-carousel owl-theme mt-5">
-            <!-- Team member 1 -->
-            <div class="col-md-12 team-style1 notepad">
-              <div class="team_img">
-                <a href="team-single.html">
-                  <img src="img/team/team1.jpg" class="img-fluid" alt="">
-                </a>
-                <!-- social icons -->
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /team_img -->
-              <div class="team-content">
-                <a href="team-single.html">
-                  <h5 class="title">Laura Smith</h5>
-                </a>
-                <span class="post">Teacher</span>
-                <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-              </div>
-              <!-- /team-content -->
-            </div>
-            <!-- /team-style1 -->
-            <!-- Team member 2 -->
-            <div class="col-md-12 team-style1 notepad">
-              <div class="team_img">
-                <a href="team-single.html">
-                  <img src="img/team/team2.jpg" class="img-fluid" alt="">
-                </a>
-                <!-- social icons -->
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /team_img -->
-              <div class="team-content">
-                <a href="team-single.html">
-                  <h5 class="title">John Doe</h5>
-                </a>
-                <span class="post">Administrator</span>
-                <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-              </div>
-              <!-- /team-content -->
-            </div>
-            <!-- /team-style1 -->
-            <!-- Team member 3 -->
-            <div class="col-md-12 team-style1 notepad">
-              <div class="team_img">
-                <a href="team-single.html">
-                  <img src="img/team/team3.jpg" class="img-fluid" alt="">
-                </a>
-                <!-- social icons -->
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /team_img -->
-              <div class="team-content">
-                <a href="team-single.html">
-                  <h5 class="title">Meghan Smith</h5>
-                </a>
-                <span class="post">Assitant Teacher</span>
-                <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-              </div>
-              <!-- /team-content -->
-            </div>
-            <!-- /team-style1 -->
-            <!-- Team member 4 -->
-            <div class="col-md-12 team-style1 notepad">
-              <div class="team_img">
-                <a href="team-single.html">
-                  <img src="img/team/team4.jpg" class="img-fluid" alt="">
-                </a>
-                <!-- social icons -->
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /team_img -->
-              <div class="team-content">
-                <a href="team-single.html">
-                  <h5 class="title">Mika Doe</h5>
-                </a>
-                <span class="post">Teacher</span>
-                <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-              </div>
-              <!-- /team-content -->
-            </div>
-            <!-- /team-style1 -->
-            <!-- Team member 5 -->
-            <div class="col-md-12 team-style1 notepad">
-              <div class="team_img">
-                <a href="team-single.html">
-                  <img src="img/team/team5.jpg" class="img-fluid" alt="">
-                </a>
-                <!-- social icons -->
-                <ul class="social">
-                  <li>
-                    <a href="#">
-                      <i class="fa fa-envelope"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fab fa-linkedin"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <!-- /team_img -->
-              <div class="team-content">
-                <a href="team-single.html">
-                  <h5 class="title">Jillian Smith</h5>
-                </a>
-                <span class="post">Asssitant Teacher</span>
-                <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-              </div>
-              <!-- /team-content -->
-            </div>
-            <!-- /team-style1 -->
-          </div>
-          <!-- /owl-team-->
-        </div>
-        <!-- /col-lg-->
-      </div>
-      <!-- /row-->
-    </section>
-    <!-- /section ends-->
     <!-- section -->
     <section id="gallery-home" class="container-fluid bg-tertiary no-bg-sm">
       <div class="container">
         <!-- section heading -->
         <div class="section-heading text-center text-light">
-          <h2>Gallery</h2>
-          <p class="subtitle">Our facilities</p>
+          <h2>Sanal Tur</h2>
+          <p class="subtitle">Kurumumuzda 3 Boyutlu Gezinin</p>
         </div>
-        <!-- /section-heading -->
-        <!-- centered Gallery navigation -->
-        <ul class="nav nav-pills category-isotope center-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#" data-toggle="tab" data-filter="*">All</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="tab" data-filter=".school">Our School</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-toggle="tab" data-filter=".activities">Activities</a>
-          </li>
-        </ul>
-        <!-- /ul -->
-        <!-- Gallery -->
-        <div id="gallery-isotope" class="row mt-5 magnific-popup">
-          <!-- Image 1 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 activities">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery1.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery1.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 2 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery2.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery2.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 3 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery3.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery3.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 4 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 activities">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery4.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery4.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 5 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery5.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery5.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 6 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery6.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery6.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 7 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 activities">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery7.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery7.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 8 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 activities">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery8.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery8.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 9 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery9.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery9.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 10 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery10.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery10.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 11 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery11.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery11.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- Image 12 -->
-          <div class="col-sm-6 col-md-6 col-lg-4 school">
-            <div class="portfolio-item">
-              <div class="gallery-thumb">
-                <img class="img-fluid " src="img/gallery/gallery12.jpg" alt="">
-                <span class="overlay-mask"></span>
-                <a href="img/gallery/gallery12.jpg" class="link centered" title="You can add caption to pictures.">
-                  <i class="fa fa-expand"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /gallery-isotope-->
+        <iframe src="{{'/cekmekoy-360/index.htm' | url}}" style="width:100%; height:700px; border:none" title="Çekmeköy" lalebahçesi="Lalebahçesi" 3d="3D" tur="Tur"></iframe>
       </div>
       <!-- /container-->
     </section>
@@ -939,156 +571,22 @@ saglananlar:
       <div class="container">
         <!-- section heading -->
         <div class="section-heading text-center">
-          <h2>Latest Blog Posts</h2>
-          <p class="subtitle">Our Updates</p>
+          <h2>{{tedarikcilerimiz}}</h2>
+          <p class="subtitle">En Sağlıklısı En Kalitelisi</p>
         </div>
         <!-- /section-heading -->
         <!-- blog carousel -->
-        <div class="carousel-3items owl-carousel owl-theme mt-0">
-          <!-- blog-box -->
-          <div class="blog-box">
-            <!-- image -->
-            <a href="blog-single.html">
-              <div class="image"><img src="img/blog/blogstyle2-1.jpg" alt=""/></div>
-            </a>
-            <!-- blog-box-caption -->
-            <div class="blog-box-caption">
-              <!-- date -->
-              <div class="date">
-                <span class="day">12</span><span class="month">May</span></div>
-              <a href="blog-single.html">
-                <h4>Helping Your Child with Socialization</h4>
+        <div class="carousel-4items owl-carousel owl-theme mt-0">
+          {%- for tedarik in tedarikciler -%}
+            <!-- blog-box -->
+            <div class="blog-box">
+              <!-- image -->
+              <a href="{{tedarik.url | url}}" target="_blank">
+                <div class="image"><img src="{{tedarik.image | url}}" alt="{{tedarik.ad}}"/></div>
               </a>
-              <!-- /link -->
-              <p>
-                Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-              </p>
             </div>
-            <!-- blog-box-footer -->
-            <div class="blog-box-footer">
-              <div class="author">Posted by<a href="#">
-                  <i class="fas fa-user"></i>Lauren Smith</a>
-              </div>
-              <div class="comments">
-                <a href="blog-single.html">
-                  <i class="fas fa-comment"></i>23</a>
-              </div>
-              <!-- Button -->
-              <div class="text-center col-md-12">
-                <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-              </div>
-            </div>
-            <!-- /blog-box-footer -->
-          </div>
-          <!-- /blog-box -->
-          <!-- blog-box -->
-          <div class="blog-box">
-            <!-- image -->
-            <a href="blog-single.html">
-              <div class="image"><img src="img/blog/blogstyle2-2.jpg" alt=""/></div>
-            </a>
-            <!-- blog-box-caption -->
-            <div class="blog-box-caption">
-              <!-- date -->
-              <div class="date">
-                <span class="day">28</span><span class="month">June</span></div>
-              <a href="blog-single.html">
-                <h4>Our Healthy meals that toddlers love</h4>
-              </a>
-              <!-- /link -->
-              <p>
-                Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-              </p>
-            </div>
-            <!-- blog-box-footer -->
-            <div class="blog-box-footer">
-              <div class="author">Posted by<a href="#">
-                  <i class="fas fa-user"></i>Jonas Doe</a>
-              </div>
-              <div class="comments">
-                <a href="blog-single.html">
-                  <i class="fas fa-comment"></i>5</a>
-              </div>
-              <!-- Button -->
-              <div class="text-center col-md-12">
-                <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-              </div>
-            </div>
-            <!-- /blog-box-footer -->
-          </div>
-          <!-- /blog-box -->
-          <!-- blog-box -->
-          <div class="blog-box">
-            <!-- image -->
-            <a href="blog-single.html">
-              <div class="image"><img src="img/blog/blogstyle2-3.jpg" alt=""/></div>
-            </a>
-            <!-- blog-box-caption -->
-            <div class="blog-box-caption">
-              <!-- date -->
-              <div class="date">
-                <span class="day">02</span><span class="month">July</span></div>
-              <a href="blog-single.html">
-                <h4>20 Fun Activities to Do With Your Kids</h4>
-              </a>
-              <!-- /link -->
-              <p>
-                Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-              </p>
-            </div>
-            <!-- blog-box-footer -->
-            <div class="blog-box-footer">
-              <div class="author">Posted by<a href="#">
-                  <i class="fas fa-user"></i>Lauren Smith</a>
-              </div>
-              <div class="comments">
-                <a href="blog-single.html">
-                  <i class="fas fa-comment"></i>10</a>
-              </div>
-              <!-- Button -->
-              <div class="text-center col-md-12">
-                <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-              </div>
-            </div>
-            <!-- /blog-box-footer -->
-          </div>
-          <!-- /blog-box -->
-          <!-- blog-box -->
-          <div class="blog-box">
-            <!-- image -->
-            <a href="blog-single.html">
-              <div class="image"><img src="img/blog/blogstyle2-4.jpg" alt=""/></div>
-            </a>
-            <!-- blog-box-caption -->
-            <div class="blog-box-caption">
-              <!-- date -->
-              <div class="date">
-                <span class="day">18</span><span class="month">June</span></div>
-              <a href="blog-single.html">
-                <h4>Brain-Boosting Activities for Children</h4>
-              </a>
-              <!-- /link -->
-              <p>
-                Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-              </p>
-            </div>
-            <!-- blog-box-footer -->
-            <div class="blog-box-footer">
-              <div class="author">Posted by<a href="#">
-                  <i class="fas fa-user"></i>Jonas Doe</a>
-              </div>
-              <div class="comments">
-                <a href="blog-single.html">
-                  <i class="fas fa-comment"></i>11</a>
-              </div>
-              <!-- Button -->
-              <div class="text-center col-md-12">
-                <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-              </div>
-            </div>
-            <!-- /blog-box-footer -->
-          </div>
-          <!-- /blog-box -->
+            <!-- /blog-box -->
+          {%- endfor -%}
         </div>
         <!-- /owl-carousel -->
       </div>
@@ -1107,9 +605,9 @@ saglananlar:
           <!-- text box -->
           <div class="col-lg-6 bg-secondary p-5 justify-content-center align-self-center" data-start="left: 50%;" data-center="left:-5%;">
             <div class="text-light justify-content-center align-self-center">
-              <h3>Enroll Today</h3>
-              <p>Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus vi tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-              <a href="contact.html" class="btn btn-tertiary">Contact us</a>
+              <h3>{{okulmevde}}</h3>
+              <p>{{okulevdeyazi}}</p>
+              <a href="{{'https://okulumevde.net' | url}}" class="btn btn-tertiary" target="_blank" rel="noreferrer">Tıklayın</a>
             </div>
             <!-- /text-light -->
           </div>

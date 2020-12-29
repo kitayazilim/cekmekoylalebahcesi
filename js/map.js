@@ -4,12 +4,12 @@ $(window).load(function () {
 	var mapcanvas = document.getElementById("map-canvas");
 	if (mapcanvas) {
 		//Open street  Map
-		var coord = [41.18425558624151, 29.250218029633228]; // <--- coordinates here
+		var coord = [41.01510710309721, 29.193241203822296]; // <--- coordinates here
 
 		var map = L.map('map-canvas', { scrollWheelZoom: false }).setView(coord, 19);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			maxZoom: 16,
+			maxZoom: 18,
 			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 		}).addTo(map);
 
