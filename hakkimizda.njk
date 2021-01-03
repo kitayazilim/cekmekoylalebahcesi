@@ -29,36 +29,36 @@ stats:
     -
         icon: flaticon-teacher
         renk: bg-primary
-        sayi: 10
+        sayi: 20
         yazi: Uzman Eğitmen
     -
         icon: flaticon-family
         renk: bg-secondary
-        sayi: 35
+        sayi: 220
         yazi: Mutlu Ailemiz
     -
         icon: flaticon-children
         renk: bg-tertiary
-        sayi: 41
+        sayi: 120
         yazi: Öğrencilerimiz
 
 detaylar:
     -
         id: 1
-        baslik: Felsefemiz
-        icerik: Felsefe hakkında  bilgi yazısı girilecek
+        baslik: Neden Anaokulu
+        icerik: Amacımız; geleceğimiz olan çocuklarımızın bilişsel, duygusal ve sosyal gelişimlerini destekleyerek, toplumda sağlam karakterli birer birey olarak yer almalarını sağlamaktır. Bu sebeple çocuklarımıza başta aile sıcaklığını aratmayacak sevgi dolu, güvenli ve hijyenik bir ortam sağlıyoruz. Sonrasında; deneme-yanılma, dokunma, gözlemleme ve keşfetme şanslarının olduğu bir öğretim metodu sunuyoruz.Ayrıca; çocuk gelişimi konusunda bilgili ve profesyonel öğretmenler yaş gruplarına göre çeşitli branş dersleri uygulamaktadır.
     -
         id: 2
-        baslik: Organizasyonumuz
-        icerik: Organizasyon hakkında bilgi yazısı girilecek
+        baslik: Nitelikli Personel
+        icerik: Sadece bir öğretim yuvası değil, eğitim ve gelecek nesilin en güzel şekilde yetişmesi Lale Bahçesi Anaokullarımızın temel felsefesidir.
     -
         id: 3
-        baslik: İş ortaklerımız ve takımımız
-        icerik: Konuyl ilgili bilgilendirme yazısı girilecek
+        baslik: Okul Öncesi Eğitim
+        icerik: Öncelikli hedefimiz Kendisi ve çevresiyle barışık, Üretken ve Özgüveni gelişmiş, Manevi değerlerini bilen, Toplumsal değerlere bağlı, Kendi haklarını savunurken başkalarının haklarını da koruyacak küçük hanımefendiler ve beyfendiler yetiştirmektir.
 
-detaylaryanbaslik: Nitelikli Personel
-detaylaryanaltbaslik: Konuyla ilgili alt başlık
-detaylaryanyazi2: Konu hakkında detaylı yazı alanı
+detaylaryanbaslik: Neden Lale Bahçesi Anaokulları
+detaylaryanaltbaslik: 
+detaylaryanyazi2: Geleceğimizi emanet edeceğimiz cocuklarımızın, bilgili, ilim ve bilime yatkın, ahlaklı, edep ve terbiye çizgisini bilen, sosyal sorumlarının bilen ve aile hayatına önem veren, vatanını, milletini, bayrağını, devletini maddi ve manevi değerlerini, dinini, hak ve batılı, paylaşmayı, arkadaşlığı, dostluğu, kardeşliği en iyi şekilde öğrenmesi için çalışıyoruz. 
 detaylaryanbuton: İletişim
 
 ---
@@ -100,11 +100,11 @@ detaylaryanbuton: İletişim
                     <p>
                         {{hakkimizdayazi | safe}}
                     </p>
-                    <ul class="custom pl-0">
+                    {# <ul class="custom pl-0">
                         {%- for bilgi in hakkimizdabilgiler-%}
                             <li>{{bilgi}}</li>
                             {%-endfor-%}
-                        </ul>
+                        </ul> #}
                         <!-- /custom-ul-->
                     </div>
                     <!-- /col-lg-->

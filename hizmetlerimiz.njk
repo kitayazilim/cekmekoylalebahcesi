@@ -7,12 +7,63 @@ eleventyNavigation:
 
 baslik: Hizmetlerimiz
 altbaslik: Çocuklarınız için <span class="text-secondary">Sağlıklı ve Güvenli</span> eğitim ortamı
-alticerikpar1: Paragraf 1 yazısı
-alticerikpar2: Paragraf 2 yazısı
+alticerikpar1: Lalebehçesi Anaokulu Olarak, çocuklarımızın okul öncesi eğitiminde gelişimini destekleyen, profesyonel ve güvenilir eğitim veren, profesyonel idareci ve öğretmen kadrosu sayesinde geleceğe emin adımlarla yürüyen bir çocuk eğitim ve gelişim kurumudur.
+alticerikpar2: Lalebahçesi olarak; gelecekte ihtiyaç duyacağımız, geleceğimizi emanet edeceğimiz biricik çocuklarımızı her yönüyle hayata hazırlamak amacıyla bu eğlenceli ve anlamlı eğitim yolculuğuna çıktık.
 alticerikbgimage: /img/servis-bg.jpg
 buton: Biz Kimiz
 butonurl: /hakkimizda
+
+hizmetler:
+    -
+        url: /img/hizmetlerimiz/service1.jpg
+        kisa: Tüzder Zeka Okulları
+        tanim: 20
+    -
+        url: /img/hizmetlerimiz/service2.jpg
+        kisa: Ahşap Okulları
+        tanim: 20
+    -
+        url: /img/hizmetlerimiz/service3.jpg
+        kisa: Drama Atölyesi
+        tanim: 20      
+    -
+        url: /img/hizmetlerimiz/service4.jpg
+        kisa: İngilizce Eğitimi
+        tanim: Geleceğimizin teminatı olacak olan çocuklarımızın temel eğitimlerinin yanında her gün gelişen ve değişen Dünya’ya ayak uydurmalarını sağlamak amacı ile temel yabancı dil dersi olarak ingilizce etkinliği verilmektedir.     
+    -
+        url: /img/hizmetlerimiz/service5.jpg
+        kisa: Fransızca Eğitimi
+        tanim: 20     
+    -
+        url: /img/hizmetlerimiz/service6.jpg
+        kisa: Gezi ve Piknik Organizasyonları 
+        tanim: 20     
+    -
+        url: /img/hizmetlerimiz/service7.jpg
+        kisa: Değerler Eğitimi
+        tanim: Geleceğimizin teminatı çocuklarımızın temel eğitimlerinin yanında mili ve manevi değerlerine bağlı bir nesil olmalarını sağlamak için değerler eğitimi verilmektedir.    
+    -
+        url: /img/hizmetlerimiz/service8.jpg
+        kisa: Satranç Dersi
+        tanim: 20     
+    -
+        url: /img/hizmetlerimiz/service9.jpg
+        kisa: Ebru Çalışması
+        tanim: 20          
+    -
+        url: /img/hizmetlerimiz/service10.jpg
+        kisa: Spor Faliyetleri
+        tanim: 20        
+    -
+        url: /img/hizmetlerimiz/service11.jpg
+        kisa: Rehberlik
+        tanim: 20    
+    -
+        url: /img/hizmetlerimiz/service12.jpg
+        kisa: At Biniciliği
+        tanim: 20                                                                             
 ---
+
 
 <div id="page-wrapper">
     <!-- Jumbotron -->
@@ -70,10 +121,35 @@ butonurl: /hakkimizda
         </svg>
         <!-- services carousel -->
         <div class="container-fluid bg-primary block-padding pattern2 pt-lg-0">
-            <h2 class="text-light text-center">Our Services</h2>
+            <h2 class="text-light text-center">Hizmetlerimiz</h2>
             <!-- image -->
             <div class="container">
                 <div class="carousel-3items owl-carousel owl-theme col-lg-12">
+                    {%- for imkan in hizmetler-%}
+                        <div class="serviceBox2">
+                            <!-- service icon -->
+                            <div class="service-icon">
+                                <a >
+                                    <img src="{{imkan.url | url}}" alt="{{imkan.kisa}}" class="blob img-fluid">
+                                </a>
+                            </div>
+                            <!-- service content -->
+                            <div class="service-content">
+                                <a >
+                                    <h4 class="service-head" style="min-height:72px">{{imkan.kisa}}</h4>
+                                </a>
+                                {# <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit integer dictum malesuada Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus Etiam rhoncus.
+                                </p> #}
+                                <!-- Button -->
+                                {# <a href="services-single.html" class="btn btn-quaternary  btn-sm mt-2 ml-1">Read More</a> #}
+                            </div>
+                        </div>
+
+                    {%-endfor-%} 
+
+
+{# 
                     <!-- service 1 -->
                     <div class="serviceBox2">
                         <!-- service icon -->
@@ -173,7 +249,7 @@ butonurl: /hakkimizda
                             <!-- Button -->
                             <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
                         </div>
-                    </div>
+                    </div> #}
                 </div>
                 <!-- /owl-services -->
             </div>
@@ -189,19 +265,19 @@ butonurl: /hakkimizda
                     <div class="ornament-stars" data-aos="fade-up-right"></div>
                 </div>
                 <div class="col-lg-6 res-margin">
-                    <h3 class="res-margin">Frequently asked questions</h3>
+                    <h3 class="res-margin">Etkinliklerimiz</h3>
                     <div class="accordion mt-5">
                         <!-- collapsible accordion 1 -->
                         <div class="card">
                             <div class="card-header">
                                 <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                                    Our Philosophy
+                                    Değerler Eğitimi
                                 </a>
                             </div>
                             <!-- /card-header -->
                             <div id="collapseOne" class="collapse show" data-parent=".accordion">
                                 <div class="card-body">
-                                    <p>Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
+                                    <p>Geleceğimizin teminatı çocuklarımızın temel eğitimlerinin yanında mili ve manevi değerlerine bağlı bir nesil olmalarını sağlamak için değerler eğitimi verilmektedir.</p>
                                 </div>
                             </div>
                         </div>
@@ -210,12 +286,12 @@ butonurl: /hakkimizda
                         <div class="card">
                             <div class="card-header">
                                 <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                    Our Organization
+                                    İngilizce Etkinliği
                                 </a>
                             </div>
                             <div id="collapseTwo" class="collapse" data-parent=".accordion">
                                 <div class="card-body">
-                                    <p>Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall Maecenas at arcu risus scelerisque laoree.</p>
+                                    <p>Geleceğimizin teminatı olacak olan çocuklarımızın temel eğitimlerinin yanında her gün gelişen ve değişen Dünya’ya ayak uydurmalarını sağlamak amacı ile temel yabancı dil dersi olarak ingilzce etkinliği verilmektedir.</p>
                                 </div>
                             </div>
                         </div>
@@ -224,15 +300,40 @@ butonurl: /hakkimizda
                         <div class="card">
                             <div class="card-header">
                                 <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                    Partnerships with our team
+                                    Beden Etkinliği
                                 </a>
                             </div>
                             <div id="collapseThree" class="collapse" data-parent=".accordion">
                                 <div class="card-body">
-                                    <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
+                                    <p>Çocuklarımıza beden eğitimi olarak jimnastik eğitimi verilmektedir.</p>
                                 </div>
                             </div>
                         </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseEx1">
+                                    İlkokula Hazırlık Etkinliği
+                                </a>
+                            </div>
+                            <div id="collapseEx1" class="collapse" data-parent=".accordion">
+                                <div class="card-body">
+                                    <p>Çocuklarımızın hayatının başlangıcı olan anaokulu eğitimi sırasında ilkokula hazırlık eğitimleride verilmektedir.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseEx2">
+                                    Özbakım Etkinliği
+                                </a>
+                            </div>
+                            <div id="collapseEx2" class="collapse" data-parent=".accordion">
+                                <div class="card-body">
+                                    <p>Çocuklarımıza günlük yaşam becerilerini kolaylaştırmak için özbakım eğitimi verilmektedir. Çocuklara günde 2 kez ve 5-10 dakika arası eğitim için zaman ayrılarak öz bakım eğitim verilmektedir.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                                              
                         <!-- /card -->
                     </div>
                     <!-- /accordion -->
